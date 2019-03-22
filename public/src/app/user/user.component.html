@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>User Component</h1>
+
+  <div class="row">
+    <div class="col-5">
+      <pre>
+      {{ users | json }}
+    </pre>
+    </div>
+    <div class="col-7">
+
+      <app-user-new (createNewUserEvent)="create($event)"></app-user-new>
+      <hr>
+      <app-user-list [users]="users" (destroyUserEvent)="destroy($event)" (updateUserEvent)="update($event)">
+      </app-user-list>
+
+    </div>
+  </div>
+</div>

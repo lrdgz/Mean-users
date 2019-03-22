@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">
+    <div class="card-title">
+      <h3>User New Component</h3>
+    </div>
+  </div>
+  <div class="card-body">
+    <form (submit)="create()">
+      <div class="form-group">
+        <input type="text" name="first_name" class="form-control" [(ngModel)]="newUser.first_name"
+          placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="last_name" class="form-control" [(ngModel)]="newUser.last_name"
+          placeholder="Lasst Name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="email" class="form-control" [(ngModel)]="newUser.email" placeholder="E-Mail">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
